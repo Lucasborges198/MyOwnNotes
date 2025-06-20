@@ -1,69 +1,78 @@
-.home-page-container{
-  display: flex;
-  height: 100vh;
-  background-color: black;
+.content {
+  background-color: rgb(0, 0, 0);
+  padding: 24px;
 }
 
-.main-content{
-  flex: 1;
+mat-toolbar {
+  background-color: rgb(0, 0, 0);
+  position: relative;
+  z-index: 5;
+}
+
+mat-sidenav {
+  background-color: rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
-.header-content{
-  padding: 16px;
-  // background: #f5f5f5;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+mat-sidenav-container {
+  height: calc(100vh - 64px);
 }
 
-.search-bar{
+.sidenav-header {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidenav-header img {
+  border-radius: 100%;
+  margin-bottom: 10px;
+}
+
+.input-bar{
   width: 100%;
   padding: 8px 12px;
   border-radius: 4px;
   border: 1px solid #ccc
 }
 
-.sidebar{
-  width: 240px;
-  background: #fafafa;
-  border-left: 1px solid #e0e0e0;
+.sidebar-items {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  min-height: 0;
+  width: 100%;
 }
 
-.sidenavImage {
-  background: transparent;
-  width: 32px;
-  height: 32px;
+.sidebar-items a {
+  width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
-  cursor: pointer;
-
-  img, svg {
-    width: 24px;
-    height: 24px;
-    display: block;
-  }
-}
-
-.transparent-button {
-  background: transparent !important;
-  box-shadow: none !important;
-}
-
-.sidenav-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 16px; // Espaço entre os itens
-}
-
-.sidenav-list li {
-  display: flex;
   align-items: center;
+  --mat-list-item-hover-state-layer-color: dodgerblue;
+  --mat-list-item-hover-label-text-color: white;
 }
 
+.input-container {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
 
+.input-bar {
+  width: 150px;
+  max-width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: width 0.3s ease-in-out;
+}
+
+.input-container:hover .input-bar,
+.input-bar:focus {
+  width: 350px;
+}

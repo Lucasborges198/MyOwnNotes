@@ -1,37 +1,26 @@
-<div class="home-page-container">
-  <div class="main-content">
-    <header class="header-content">
-      <input type="text" placeholder="Pesquisar..." class="search-bar" />
-    </header>
-    <div style="flex: 1; padding: 24px">
-      <!-- main content -->
+<mat-toolbar class="mat-elevation-z3">
+  <button mat-icon-button (click)="sidenav.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+</mat-toolbar>
+<mat-sidenav-container>
+  <mat-sidenav #sidenav [style.width]="'320px'">
+    <mat-nav-list class="sidebar-items">
+      <a mat-list-item *ngFor="let item of menuItem()">
+        <mat-icon matListItemIcon>{{ item.icon }}</mat-icon>
+        <span matListItemTitle>{{ item.label }}</span>
+      </a>
+    </mat-nav-list>
+    <div class="sidenav-header">
+      <img width="50" height="50" src="/assets/images/daviBrito.webp" />
     </div>
-  </div>
-  <mat-sidenav-container>
-    <mat-sidenav #sidenav mode="over" [(opened)]="opened">
-      <ul class="sidenav-list">
-        <li>
-          <button>
-            <img src="assets/images/mais.svg" class="sidenavImage" />
-          </button>
-        </li>
-        <li>
-          <button>
-            <img src="assets/images/sino.svg" class="sidenavImage" />
-          </button>
-        </li>
-        <li>
-          <button>
-            <img src="assets/images/casa.svg" class="sidenavImage" />
-          </button>
-        </li>
-      </ul>
-    </mat-sidenav>
-    <mat-sidenav-content>
-      <button mat-button (click)="sidenav.toggle()">
-        <img src="assets/images/menu-hamburguer.svg" class="sidenavImage" />
-      </button>
-      <div *ngFor="let e of events">{{e}}</div>
-    </mat-sidenav-content>
-  </mat-sidenav-container>
-</div>
+  </mat-sidenav>
+  <mat-sidenav-content class="content">
+    <div class="input-container">
+      <input type="search" placeholder="Pesquisar..." class="input-bar" />
+    </div>
+    <div style="flex: 1; padding: 24px">
+    </div>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
