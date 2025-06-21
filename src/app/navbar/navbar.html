@@ -1,0 +1,20 @@
+<div class="sidebar" [class.collapsed]="isCollapsed">
+  <div class="hamburger" (click)="toggleSidebar()">
+    <mat-icon>menu</mat-icon>
+  </div>
+
+  <div class="menu-items">
+    <a
+      *ngFor="let item of menuItem()"
+      [routerLink]="item.route"
+      class="menu-item"
+    >
+      <mat-icon>{{ item.icon }}</mat-icon>
+      <span class="label" [class.hidden]="isCollapsed">{{ item.label }}</span>
+    </a>
+  </div>
+
+  <div class="profile-section">
+    <img src="/assets/images/daviBrito.webp" alt="profile" />
+  </div>
+</div>

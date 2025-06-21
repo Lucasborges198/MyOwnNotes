@@ -1,26 +1,16 @@
-<mat-toolbar class="mat-elevation-z3">
-  <button mat-icon-button (click)="sidenav.toggle()">
-    <mat-icon>menu</mat-icon>
-  </button>
-</mat-toolbar>
-<mat-sidenav-container>
-  <mat-sidenav #sidenav [style.width]="'320px'">
-    <mat-nav-list class="sidebar-items">
-      <a mat-list-item *ngFor="let item of menuItem()">
-        <mat-icon matListItemIcon>{{ item.icon }}</mat-icon>
-        <span matListItemTitle>{{ item.label }}</span>
-      </a>
-    </mat-nav-list>
-    <div class="sidenav-header">
-      <img width="50" height="50" src="/assets/images/daviBrito.webp" />
+<div class="layout">
+  <app-navbar></app-navbar>
+  <div class="content">
+    <div class="logout">
+      <span class="material-icons"> logout </span>
     </div>
-  </mat-sidenav>
-  <mat-sidenav-content class="content">
     <div class="input-container">
-      <input type="search" placeholder="Pesquisar..." class="input-bar" />
-    </div>
-    <div style="flex: 1; padding: 24px">
+      <input
+        type="search"
+        placeholder="Qual a sua ideia hoje..."
+        class="input-bar"
+      />
     </div>
     <router-outlet></router-outlet>
-  </mat-sidenav-content>
-</mat-sidenav-container>
+  </div>
+</div>
