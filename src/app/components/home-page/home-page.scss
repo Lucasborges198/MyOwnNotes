@@ -39,6 +39,7 @@
 }
 
 .input-bar {
+  color: #ffffff;
   width: 175px;
   height: 60px;
   max-width: 100%;
@@ -52,4 +53,9 @@
 .input-container:hover .input-bar,
 .input-bar:focus {
   width: 550px;
+}
+
+.input-bar::-webkit-search-cancel-button {
+  filter: invert(1); // Deixa o "X" branco em fundo escuro
+  // Ou use filter: brightness(0) saturate(100%) invert(100%);
 }
