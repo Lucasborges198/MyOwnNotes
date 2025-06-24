@@ -7,6 +7,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { NavbarComponent } from '../navbar/navbar';
+import { MatInputModule } from '@angular/material/input';
+import { TextFieldModule } from '@angular/cdk/text-field';
+import { AutosizeModule } from 'ngx-autosize';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-home-page',
@@ -20,10 +24,29 @@ import { NavbarComponent } from '../navbar/navbar';
     MatIconModule,
     MatSidenavModule,
     MatListModule,
+    MatInputModule,
+    TextFieldModule,
+    AutosizeModule,
+    FormsModule,
   ],
   styleUrls: ['./home-page.scss'],
 })
 export class HomePage {
+  hovering = false;
+  noteText = '';
 
+  enviarNota() {
+    const texto = this.noteText.trim();
+    if (texto) {
+      console.log('Nota enviada:', texto);
+      // Aqui você pode: salvar em array, enviar para backend, etc.
+      this.noteText = ''; // limpa campo após envio
+    }
+  }
+  onKeyDown(event: KeyboardEvent) {
+    if (event.ctrlKey && event.key === 'Enter') {
+      event.preventDefault(); // evita quebra de linha
+      this.enviarNota();
+    }
+  }
 }
-

@@ -5,12 +5,37 @@
       <span class="material-icons"> logout </span>
     </div>
     <div class="input-container">
-      <input
-        type="search"
-        placeholder="Qual a sua ideia hoje..."
-        class="input-bar"
-      />
+      <div class="input-wrapper">
+        <textarea
+          matInput
+          cdkTextareaAutosize
+          #autosize="cdkTextareaAutosize"
+          class="input-bar"
+          placeholder="Qual a sua ideia hoje..."
+          [(ngModel)]="noteText"
+          (keydown)="onKeyDown($event)"
+          (mouseenter)="hovering = true"
+          (mouseleave)="hovering = false"
+        ></textarea>
+
+        <button
+          *ngIf="noteText"
+          class="clear-btn"
+          (click)="noteText = ''"
+          aria-label="Limpar campo"
+        >
+          ✕
+        </button>
+      </div>
+
+      <button
+        mat-icon-button
+        class="send-btn"
+        (click)="enviarNota()"
+        aria-label="Enviar nota"
+      >
+        <mat-icon>arrow_forward</mat-icon>
+      </button>
     </div>
-    <router-outlet></router-outlet>
   </div>
 </div>
