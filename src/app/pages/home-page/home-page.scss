@@ -1,0 +1,207 @@
+.layout {
+  display: flex;
+  background: #1e1e1e;
+}
+
+.content {
+  flex: 1;
+  background: #1e1e1e;
+  padding: 24px;
+  color: white;
+  overflow-y: auto;
+  max-height: calc(100vh - 120px); // ajuste conforme seu layout
+}
+
+.logout {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  padding: 0;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.logout:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 32px;
+  gap: 8px;
+}
+
+.input-bar {
+  color: #ffffff;
+  width: 190px;
+  height: 60px;
+  max-width: 100%;
+  padding: 8px 32px 8px 12px;
+  background-color: #1e1e1e;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: width 0.6s ease-in-out;
+  resize: none;
+}
+
+.input-container:hover .input-bar,
+.input-bar:focus {
+  width: 550px;
+}
+
+.input-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.clear-btn {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  background: transparent;
+  border: none;
+  color: #ccc;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: white;
+  }
+}
+
+.send-btn {
+  align-self: center; // centraliza verticalmente no container flex
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  color: #ccc;
+  transition: color 0.2s ease;
+}
+
+.notes-board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px; // Espaçamento lateral reduzido
+  margin-top: 40px;
+  width: 100%;
+}
+
+.note {
+  background: #232323;
+  border-radius: 12px;
+  padding: 20px 18px 18px 18px;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  min-width: 200px;
+  min-height: 100px;
+  max-width: 320px;
+  max-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: box-shadow 0.2s, max-height 0.3s, min-height 0.3s;
+  position: relative;
+  opacity: 0;
+  transform: translateY(-30px) scale(0.95);
+  animation: noteIn 0.5s forwards;
+  overflow: hidden;
+  cursor: pointer;
+  word-break: break-word;
+  white-space: pre-line;
+}
+
+.note:hover {
+  max-height: 500px; // Expande ao passar o mouse
+  min-height: 120px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+  z-index: 2;
+  overflow: auto; // Adiciona scroll ao expandir
+}
+
+.note:hover::-webkit-scrollbar {
+  width: 6px;
+  background: transparent;
+}
+
+.note:hover::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 4px;
+}
+
+.note:hover {
+  scrollbar-width: thin;
+  scrollbar-color: #444 #232323;
+}
+
+@keyframes noteIn {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.note-title {
+  font-weight: 600;
+  font-size: 1.1em;
+  margin-bottom: 12px;
+  color: #e0e0e0;
+}
+
+.note-content {
+  font-size: 0.98em;
+  color: #cccccc;
+}
+
+.content::-webkit-scrollbar {
+  width: 8px;
+  background: transparent;
+}
+
+.content::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 4px;
+}
+
+.content {
+  scrollbar-width: thin;
+  scrollbar-color: #444 #232323;
+}
+
+.delete-btn {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  color: #ccc;
+  cursor: pointer;
+  z-index: 3;
+  opacity: 0.85;
+  transition: color 0.2s, opacity 0.2s;
+}
+
+.delete-btn:hover {
+  color: #ff5252;
+  opacity: 1;
+}
+
+@media (max-width: 600px) {
+  .modal {
+    min-width: 80vw;
+    padding: 1.2rem 0.5rem 1rem 0.5rem;
+  }
+}

@@ -17,7 +17,6 @@
           (mouseenter)="hovering = true"
           (mouseleave)="hovering = false"
         ></textarea>
-
         <button
           *ngIf="noteText"
           class="clear-btn"
@@ -27,7 +26,7 @@
           ✕
         </button>
       </div>
-
+      <!-- botao de envio -->
       <button
         mat-icon-button
         class="send-btn"
@@ -36,6 +35,27 @@
       >
         <mat-icon>arrow_forward</mat-icon>
       </button>
+    </div>
+    <div class="notes-board">
+      <div
+        class="note"
+        *ngFor="let nota of inventory.slice().reverse(); let i = index"
+        [class.expanded]="expandedIndex === i"
+        (mouseenter)="expandedIndex = i"
+        (mouseleave)="expandedIndex = null"
+      >
+        <div class="note-content">{{ nota.content }}</div>
+        <!-- botal de exclusao -->
+        <button
+          *ngIf="expandedIndex === i"
+          mat-icon-button
+          class="delete-btn"
+          (click)="deleteNote(i)"
+          aria-label="Excluir nota"
+        >
+          <mat-icon>delete</mat-icon>
+        </button>
+      </div>
     </div>
   </div>
 </div>
