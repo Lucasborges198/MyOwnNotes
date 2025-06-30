@@ -1,0 +1,141 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Kauan\\source\\repos\\MyOwnNotes\\MyOwnNotes\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CB876FC0-D75E-5497-9663-7B5ACC4F6BEE}|MyOwnNotes.csproj|c:\\users\\kauan\\source\\repos\\myownnotes\\myownnotes\\controllers\\notacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB876FC0-D75E-5497-9663-7B5ACC4F6BEE}|MyOwnNotes.csproj|solutionrelative:controllers\\notacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB876FC0-D75E-5497-9663-7B5ACC4F6BEE}|MyOwnNotes.csproj|c:\\users\\kauan\\source\\repos\\myownnotes\\myownnotes\\3-dominio\\interfaces\\inotarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB876FC0-D75E-5497-9663-7B5ACC4F6BEE}|MyOwnNotes.csproj|solutionrelative:3-dominio\\interfaces\\inotarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB876FC0-D75E-5497-9663-7B5ACC4F6BEE}|MyOwnNotes.csproj|c:\\users\\kauan\\source\\repos\\myownnotes\\myownnotes\\4-data\\repository\\notarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB876FC0-D75E-5497-9663-7B5ACC4F6BEE}|MyOwnNotes.csproj|solutionrelative:4-data\\repository\\notarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB876FC0-D75E-5497-9663-7B5ACC4F6BEE}|MyOwnNotes.csproj|c:\\users\\kauan\\source\\repos\\myownnotes\\myownnotes\\2-services\\dtos\\notadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB876FC0-D75E-5497-9663-7B5ACC4F6BEE}|MyOwnNotes.csproj|solutionrelative:2-services\\dtos\\notadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB876FC0-D75E-5497-9663-7B5ACC4F6BEE}|MyOwnNotes.csproj|c:\\users\\kauan\\source\\repos\\myownnotes\\myownnotes\\2-services\\services\\notaappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB876FC0-D75E-5497-9663-7B5ACC4F6BEE}|MyOwnNotes.csproj|solutionrelative:2-services\\services\\notaappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB876FC0-D75E-5497-9663-7B5ACC4F6BEE}|MyOwnNotes.csproj|c:\\users\\kauan\\source\\repos\\myownnotes\\myownnotes\\2-services\\mappers\\notaprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB876FC0-D75E-5497-9663-7B5ACC4F6BEE}|MyOwnNotes.csproj|solutionrelative:2-services\\mappers\\notaprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB876FC0-D75E-5497-9663-7B5ACC4F6BEE}|MyOwnNotes.csproj|c:\\users\\kauan\\source\\repos\\myownnotes\\myownnotes\\2-services\\interfaces\\inotaappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB876FC0-D75E-5497-9663-7B5ACC4F6BEE}|MyOwnNotes.csproj|solutionrelative:2-services\\interfaces\\inotaappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "INotaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Kauan\\source\\repos\\MyOwnNotes\\MyOwnNotes\\3-Dominio\\Interfaces\\INotaRepository.cs",
+              "RelativeDocumentMoniker": "3-Dominio\\Interfaces\\INotaRepository.cs",
+              "ToolTip": "C:\\Users\\Kauan\\source\\repos\\MyOwnNotes\\MyOwnNotes\\3-Dominio\\Interfaces\\INotaRepository.cs",
+              "RelativeToolTip": "3-Dominio\\Interfaces\\INotaRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T00:48:04.8Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NotaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Kauan\\source\\repos\\MyOwnNotes\\MyOwnNotes\\4-Data\\Repository\\NotaRepository.cs",
+              "RelativeDocumentMoniker": "4-Data\\Repository\\NotaRepository.cs",
+              "ToolTip": "C:\\Users\\Kauan\\source\\repos\\MyOwnNotes\\MyOwnNotes\\4-Data\\Repository\\NotaRepository.cs",
+              "RelativeToolTip": "4-Data\\Repository\\NotaRepository.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T00:46:49.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NotaAppService.cs",
+              "DocumentMoniker": "C:\\Users\\Kauan\\source\\repos\\MyOwnNotes\\MyOwnNotes\\2-Services\\Services\\NotaAppService.cs",
+              "RelativeDocumentMoniker": "2-Services\\Services\\NotaAppService.cs",
+              "ToolTip": "C:\\Users\\Kauan\\source\\repos\\MyOwnNotes\\MyOwnNotes\\2-Services\\Services\\NotaAppService.cs",
+              "RelativeToolTip": "2-Services\\Services\\NotaAppService.cs",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAcwCcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T00:39:15.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NotaProfile.cs",
+              "DocumentMoniker": "C:\\Users\\Kauan\\source\\repos\\MyOwnNotes\\MyOwnNotes\\2-Services\\Mappers\\NotaProfile.cs",
+              "RelativeDocumentMoniker": "2-Services\\Mappers\\NotaProfile.cs",
+              "ToolTip": "C:\\Users\\Kauan\\source\\repos\\MyOwnNotes\\MyOwnNotes\\2-Services\\Mappers\\NotaProfile.cs",
+              "RelativeToolTip": "2-Services\\Mappers\\NotaProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T00:39:11.864Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "INotaAppService.cs",
+              "DocumentMoniker": "C:\\Users\\Kauan\\source\\repos\\MyOwnNotes\\MyOwnNotes\\2-Services\\Interfaces\\INotaAppService.cs",
+              "RelativeDocumentMoniker": "2-Services\\Interfaces\\INotaAppService.cs",
+              "ToolTip": "C:\\Users\\Kauan\\source\\repos\\MyOwnNotes\\MyOwnNotes\\2-Services\\Interfaces\\INotaAppService.cs",
+              "RelativeToolTip": "2-Services\\Interfaces\\INotaAppService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T00:39:07.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NotaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Kauan\\source\\repos\\MyOwnNotes\\MyOwnNotes\\2-Services\\DTOS\\NotaDTO.cs",
+              "RelativeDocumentMoniker": "2-Services\\DTOS\\NotaDTO.cs",
+              "ToolTip": "C:\\Users\\Kauan\\source\\repos\\MyOwnNotes\\MyOwnNotes\\2-Services\\DTOS\\NotaDTO.cs",
+              "RelativeToolTip": "2-Services\\DTOS\\NotaDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T00:39:05.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NotaController.cs",
+              "DocumentMoniker": "C:\\Users\\Kauan\\source\\repos\\MyOwnNotes\\MyOwnNotes\\Controllers\\NotaController.cs",
+              "RelativeDocumentMoniker": "Controllers\\NotaController.cs",
+              "ToolTip": "C:\\Users\\Kauan\\source\\repos\\MyOwnNotes\\MyOwnNotes\\Controllers\\NotaController.cs",
+              "RelativeToolTip": "Controllers\\NotaController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowFUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T00:18:02.262Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
