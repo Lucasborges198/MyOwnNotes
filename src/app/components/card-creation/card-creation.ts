@@ -32,7 +32,7 @@ export class CardCreation {
     title: string;
     content: string;
     tag: string;
-    cardTagType: string
+    cardTagType: string;
   }>();
   @Output() close = new EventEmitter<boolean>();
 
@@ -41,7 +41,7 @@ export class CardCreation {
       title: ['', Validators.required],
       tag: [''],
       content: ['', Validators.required],
-      cardTagType: ['', Validators.required],
+      cardTagType: ['casual', Validators.required],
     });
   }
   ngOnInit(): void {}
@@ -52,6 +52,7 @@ export class CardCreation {
 
   onSave(): void {
     if (this.noteForm.valid) {
+      console.log(this.noteForm.value);
       this.cardContent.emit(this.noteForm.value);
       this.noteForm.reset();
       this.close.emit(false);

@@ -21,6 +21,7 @@
         [class.expanded]="expandedIndex === i"
         (mouseenter)="expandedIndex = i"
         (mouseleave)="expandedIndex = null"
+        [ngClass]="nota.cardTagType"
       >
         <div class="note-title"><strong>{{ nota.title }}</strong></div>
         <div class="note-content">{{ nota.content }}</div>

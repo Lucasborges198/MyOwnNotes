@@ -68,6 +68,32 @@
   white-space: pre-line;
 }
 
+/* Indicador de tipo de card: bolinha discreta no canto superior direito */
+.note.casual::before,
+.note.importante::before,
+.note.crucial::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+}
+
+.note.casual::before {
+  background: #2196f3; /* azul */
+}
+
+.note.importante::before {
+  background: #ff9800; /* laranja */
+}
+
+.note.crucial::before {
+  background: #f44336; /* vermelho */
+}
+
 .note:hover {
   max-height: 500px; // Expande ao passar o mouse
   min-height: 120px;

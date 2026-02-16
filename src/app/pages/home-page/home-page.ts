@@ -40,7 +40,7 @@ export class HomePage {
   public isLoading = false;
   public openModal = false;
 
-  public inventory: { title: string; content: string; tag: string }[] = [];
+  public inventory: { title: string; content: string; tag: string; cardTagType: string }[] = [];
 
   hovering = false;
   noteText = '';
@@ -55,7 +55,8 @@ export class HomePage {
       const content = texto;
       const tag = ''; // ajuste se quiser capturar tags
       const title = '';
-      const nota = { title, content, tag };
+      const cardTagType = '';
+      const nota = { title, content, tag, cardTagType };
 
       this.inventory.push(nota);
 
