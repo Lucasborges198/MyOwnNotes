@@ -4,38 +4,16 @@
     <div class="logout">
       <span class="material-icons"> logout </span>
     </div>
-    <div class="input-container">
-      <div class="input-wrapper">
-        <textarea
-          matInput
-          cdkTextareaAutosize
-          #autosize="cdkTextareaAutosize"
-          class="input-bar"
-          placeholder="Qual a sua ideia hoje..."
-          [(ngModel)]="noteText"
-          (keydown)="onKeyDown($event)"
-          (mouseenter)="hovering = true"
-          (mouseleave)="hovering = false"
-        ></textarea>
-        <button
-          *ngIf="noteText"
-          class="clear-btn"
-          (click)="noteText = ''"
-          aria-label="Limpar campo"
-        >
-          ✕
-        </button>
-      </div>
-      <!-- botao de envio -->
-      <button
-        mat-icon-button
-        class="send-btn"
-        (click)="enviarNota()"
-        aria-label="Enviar nota"
-      >
-        <mat-icon>arrow_forward</mat-icon>
+    <div class="btn">
+      <button mat-fab class="create-btn" (click)="openCreateNoteModal()">
+        <mat-icon>create</mat-icon>
       </button>
     </div>
+    <app-card-creation
+      [opened]="openModal"
+      (openedChange)="openModal = $event"
+      (cardContent)="setNewCard($event)"
+    ></app-card-creation>
     <div class="notes-board">
       <div
         class="note"

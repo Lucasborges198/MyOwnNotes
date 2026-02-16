@@ -11,7 +11,7 @@ import { MatInputModule } from '@angular/material/input';
 import { TextFieldModule } from '@angular/cdk/text-field';
 import { AutosizeModule } from 'ngx-autosize';
 import { FormsModule } from '@angular/forms';
-import { MatDialog, MatDialogModule } from '@angular/material/dialog';
+import { CardCreation } from '../../components/card-creation/card-creation';
 
 @Component({
   selector: 'app-home-page',
@@ -29,17 +29,18 @@ import { MatDialog, MatDialogModule } from '@angular/material/dialog';
     TextFieldModule,
     AutosizeModule,
     FormsModule,
-    MatDialogModule
+    CardCreation,
   ],
   styleUrls: ['./home-page.scss'],
 })
 export class HomePage {
-  constructor(public dialog: MatDialog, public cdr: ChangeDetectorRef) {}
+  constructor(public cdr: ChangeDetectorRef) {}
   public content = '';
   public tag = '';
   public isLoading = false;
+  public openModal = false;
 
-  inventory: { content: string; tag: string }[] = [];
+  public inventory: { title: string; content: string; tag: string }[] = [];
 
   hovering = false;
   noteText = '';
@@ -53,8 +54,8 @@ export class HomePage {
     if (texto) {
       const content = texto;
       const tag = ''; // ajuste se quiser capturar tags
-
-      const nota = { content, tag };
+      const title = '';
+      const nota = { title, content, tag };
 
       this.inventory.push(nota);
 
@@ -75,6 +76,21 @@ export class HomePage {
       this.noteToDelete = null;
       this.showModal = false;
       this.cdr.detectChanges();
+    }
+  }
+
+  public modalOnChange(type: boolean) {
+    this.openModal = type;
+  }
+
+  openCreateNoteModal(): void {
+    this.openModal = true;
+  }
+
+  public setNewCard(cardContent: any) {
+    if (cardContent) {
+      this.inventory.push(cardContent);
+      this.openModal = false;
     }
   }
 }

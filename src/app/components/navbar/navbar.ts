@@ -27,7 +27,6 @@ export class NavbarComponent {
   }
 
   menuItem = signal<MenuItem[]>([
-    { icon: 'create', label: 'Create', route: '/create' },
     { icon: 'notifications', label: 'Notifications', route: '/notifications' },
     { icon: 'settings', label: 'Settings', route: '/settings' },
     { icon: 'class', label: 'Collection', route: '/class' },

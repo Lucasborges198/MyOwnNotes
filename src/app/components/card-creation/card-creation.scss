@@ -1,0 +1,54 @@
+// Overlay de fundo escuro
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-container {
+  background: #232323;
+  color: #e0e0e0;
+  padding: 24px 28px;
+  min-width: 450px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.modal-title {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.form-field {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+// Estilização customizada para os campos de formulário no tema escuro
+::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex {
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 6px 6px 0 0;
+}
+
+::ng-deep .mat-input-element {
+  color: #e0e0e0 !important;
+}
+
+textarea {
+  resize: vertical; // Permite que o usuário redimensione o textarea verticalmente
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 24px;
+}
