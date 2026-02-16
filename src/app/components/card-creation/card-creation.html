@@ -5,18 +5,29 @@
     <form [formGroup]="noteForm" (ngSubmit)="onSave()">
       <mat-form-field appearance="fill" class="form-field">
         <mat-label>Título</mat-label>
-        <input matInput formControlName="title" cdkFocusInitial>
+        <input matInput formControlName="title" cdkFocusInitial />
       </mat-form-field>
 
       <mat-form-field appearance="fill" class="form-field">
         <mat-label>Tag (Opcional)</mat-label>
-        <input matInput formControlName="tag">
+        <input matInput formControlName="tag" />
       </mat-form-field>
+
+      <label>Selecione o tipo da tag</label>
+      <mat-radio-group class="radio-group">
+        <mat-radio-button
+          *ngFor="let type of cardType"
+          class="radio-button"
+          [value]="type"
+        >
+          {{ type }}
+        </mat-radio-button>
+      </mat-radio-group>
 
       <mat-form-field appearance="fill" class="form-field">
         <mat-label>Conteúdo</mat-label>
-        <textarea 
-          matInput 
+        <textarea
+          matInput
           formControlName="content"
           rows="6"
           placeholder="Escreva sua nota aqui..."
@@ -25,7 +36,14 @@
 
       <div class="modal-actions">
         <button mat-button type="button" (click)="onCancel()">Cancelar</button>
-        <button mat-raised-button color="primary" type="submit" [disabled]="!noteForm.valid">Salvar</button>
+        <button
+          mat-raised-button
+          color="primary"
+          type="submit"
+          [disabled]="!noteForm.valid"
+        >
+          Salvar
+        </button>
       </div>
     </form>
   </div>

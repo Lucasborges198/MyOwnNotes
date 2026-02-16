@@ -9,6 +9,7 @@ import { MatInputModule } from '@angular/material/input';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
+import { MatRadioModule } from '@angular/material/radio';
 
 @Component({
   selector: 'app-card-creation',
@@ -18,17 +19,20 @@ import { MatButtonModule } from '@angular/material/button';
     ReactiveFormsModule,
     CommonModule,
     MatButtonModule,
+    MatRadioModule,
   ],
   templateUrl: './card-creation.html',
   styleUrl: './card-creation.scss',
 })
 export class CardCreation {
   noteForm: FormGroup;
+  public cardType = ['casual', 'importante', 'crucial'];
   @Input() opened: boolean = false;
   @Output() cardContent = new EventEmitter<{
     title: string;
     content: string;
     tag: string;
+    cardTagType: string
   }>();
   @Output() close = new EventEmitter<boolean>();
 
@@ -37,9 +41,9 @@ export class CardCreation {
       title: ['', Validators.required],
       tag: [''],
       content: ['', Validators.required],
+      cardTagType: ['', Validators.required],
     });
   }
-
   ngOnInit(): void {}
 
   onCancel(): void {
