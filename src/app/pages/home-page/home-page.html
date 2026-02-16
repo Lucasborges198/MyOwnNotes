@@ -11,7 +11,7 @@
     </div>
     <app-card-creation
       [opened]="openModal"
-      (openedChange)="openModal = $event"
+      (close)="modalOnClose($event)"
       (cardContent)="setNewCard($event)"
     ></app-card-creation>
     <div class="notes-board">
@@ -22,7 +22,10 @@
         (mouseenter)="expandedIndex = i"
         (mouseleave)="expandedIndex = null"
       >
+        <div class="note-title"><strong>{{ nota.title }}</strong></div>
         <div class="note-content">{{ nota.content }}</div>
+        <div class="note-tag">{{ nota.tag }}</div>
+
         <!-- botal de exclusao -->
         <button
           *ngIf="expandedIndex === i"

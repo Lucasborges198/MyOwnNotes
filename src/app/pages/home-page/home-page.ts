@@ -93,4 +93,8 @@ export class HomePage {
       this.openModal = false;
     }
   }
+
+  public modalOnClose($event: any){
+    this.openModal = $event
+  }
 }

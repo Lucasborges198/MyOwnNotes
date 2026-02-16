@@ -30,7 +30,7 @@ export class CardCreation {
     content: string;
     tag: string;
   }>();
-  @Output() openedChange = new EventEmitter<boolean>();
+  @Output() close = new EventEmitter<boolean>();
 
   constructor(private fb: FormBuilder) {
     this.noteForm = this.fb.group({
@@ -43,14 +43,14 @@ export class CardCreation {
   ngOnInit(): void {}
 
   onCancel(): void {
-    this.openedChange.emit(false);
+    this.close.emit(false);
   }
 
   onSave(): void {
     if (this.noteForm.valid) {
       this.cardContent.emit(this.noteForm.value);
       this.noteForm.reset();
-      this.openedChange.emit(false);
+      this.close.emit(false);
     }
   }
 }
